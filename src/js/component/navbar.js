@@ -1,17 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import star from "../../img/star.jpg";
+import Dropdown from "react-bootstrap/Dropdown";
 
 export const Navbar = () => {
-	return (
-		<nav className="navbar navbar-light bg-light mb-3">
-			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
-			</div>
-		</nav>
-	);
-};
+    return (
+        <div>
+            <div className="container-fluid">
+                <nav className="navbar navbar-light bg-light mh-3">
+                </nav>
+            </div>
+            <div className="container">
+                <Link to="/"><img src={star} width="60" height="40" /></Link>
+            </div>
+        </div>
+    )
+}
+<Link to="/">
+    <img src="../img/star.jpg" />
+</Link>
